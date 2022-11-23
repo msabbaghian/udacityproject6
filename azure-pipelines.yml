@@ -11,10 +11,10 @@ variables:
   azureServiceConnectionId: 'b7e50298-819f-4a60-a708-74a26a58aac0'
 
   # Web app name
-  webAppName: 'flask-sklearn'
+  webAppName: 'flask-sklearn-mo'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'Project6VM'
 
   # Environment name
   environmentName: 'venv'
