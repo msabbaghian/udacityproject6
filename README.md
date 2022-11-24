@@ -6,18 +6,23 @@
 <TODO: Project Plan
 
 * A link to a Trello board for the project
+https://trello.com/invite/b/4EFtOKS1/ATTIde9f7a97ccbc88358f17fa37a940c352CB752D2D/project-6-ci-cd
+
 * A link to a spreadsheet that includes the original and final project plan>
+https://docs.google.com/spreadsheets/d/1MuTdgJHaKLMtBAChJjcO1XEwVGcNuIiiuUzVuBr77VE/edit?usp=sharing
 
 ## Instructions
 
 <TODO:  
 * Architectural Diagram (Shows how key parts of the system work)>
+![Alt text](/screenshots/Architecture.jpg?raw=true "Optional Title")
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
 * Project running on Azure App Service
 
 * Project cloned into Azure Cloud Shell
+![Alt text](/screenshots/Clone_repo.png?raw=true "Optional Title")
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
