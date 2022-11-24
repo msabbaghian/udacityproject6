@@ -23,7 +23,7 @@ def home():
     html = "<h3>Sklearn Prediction Home test</h3>"
     test = predict()
     
-    return html.format(test)
+    return test
     #return html.format(format)
 
 # TO DO:  Log out the prediction value
