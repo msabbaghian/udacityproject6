@@ -35,12 +35,12 @@ def predict():
         # clf = joblib.load("./Housing_price_model/LinearRegression.joblib")
         # clf = joblib.load("./Housing_price_model/StochasticGradientDescent.joblib")
         clf = joblib.load("./Housing_price_model/GradientBoostingRegressor.joblib")
+        clf = clf[0][0]
     except:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
 
     json_payload = request.json
-    return json_payload;
     LOG.info("JSON payload: %s json_payload")
     inference_payload = pd.DataFrame(json_payload)
     LOG.info("inference payload DataFrame: %s inference_payload")
