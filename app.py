@@ -36,17 +36,32 @@ def predict():
         # clf = joblib.load("./Housing_price_model/StochasticGradientDescent.joblib")
         clf = joblib.load("./Housing_price_model/GradientBoostingRegressor.joblib")
         clf = clf[0][0]
-        return "Model loaded"
     except:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
-
-    json_payload = request.json
-    LOG.info("JSON payload: %s json_payload")
-    inference_payload = pd.DataFrame(json_payload)
-    LOG.info("inference payload DataFrame: %s inference_payload")
-    scaled_payload = scale(inference_payload)
-    prediction = list(clf.predict(scaled_payload))
+    
+    try:
+        json_payload = request.json
+        LOG.info("JSON payload: %s json_payload")
+    except:
+        return "request failed"
+    
+    try:
+        inference_payload = pd.DataFrame(json_payload)
+        LOG.info("inference payload DataFrame: %s inference_payload")
+    except:
+        return "inference failed"
+    
+    try:
+        scaled_payload = scale(inference_payload)
+    except:
+        return "scaling failed"
+    
+    try:
+        prediction = list(clf.predict(scaled_payload))
+    except:
+        return "prediction failed"
+    
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
