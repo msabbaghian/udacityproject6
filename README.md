@@ -15,14 +15,14 @@ https://docs.google.com/spreadsheets/d/1MuTdgJHaKLMtBAChJjcO1XEwVGcNuIiiuUzVuBr7
 
 <TODO:  
 * Architectural Diagram (Shows how key parts of the system work)>
-#![image](udacityproject6/Screenshots/Architecture.jpg)
+![image](https://github.com/msabbaghian/udacityproject6/raw/main/Screenshots/Architecture.jpg)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
 * Project running on Azure App Service
 
 * Project cloned into Azure Cloud Shell
-#![Alt text](udacityproject6/Screenshots/Clone_repo.png?raw=true "Optional Title")
+![image](https://github.com/msabbaghian/udacityproject6/raw/main/Screenshots/Clone_repo.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
