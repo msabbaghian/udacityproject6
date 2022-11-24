@@ -25,12 +25,17 @@ https://docs.google.com/spreadsheets/d/1MuTdgJHaKLMtBAChJjcO1XEwVGcNuIiiuUzVuBr7
 ![image](https://github.com/msabbaghian/udacityproject6/raw/main/Screenshots/Clone_repo.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
+![image](https://github.com/msabbaghian/udacityproject6/raw/main/Screenshots/Pass_test_CI.png)
 
 * Output of a test run
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
+![image](https://github.com/msabbaghian/udacityproject6/raw/main/Screenshots/Successfull_deploy.png)
+
 * Running Azure App Service from Azure Pipelines automatic deployment
+
+![image](https://github.com/msabbaghian/udacityproject6/raw/main/Screenshots/Running_webapp.png)
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
@@ -46,11 +51,11 @@ Port: 443
 > 
 
 ## Enhancements
-
-<TODO: A short description of how to improve the project in the future>
+The models can be improved with better data and alternative prediction models should be tested to increate the accuracy of the model
+  
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+
 
 
