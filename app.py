@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
+from sklearn.externals import joblib
 import logging
 
 import pandas as pd
@@ -55,7 +56,6 @@ def predict():
 
     try:
         clf = joblib.load("boston_housing_prediction.joblib")
-        clf = clf[0][0]
     except:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
