@@ -43,7 +43,7 @@ def predict():
     try:
         json_payload = request.json
     except Exception as err:
-        return f"Unexpected {err=}, {type(err)=}"
+        return f"Unexpected {err}, {type(err)}"
     
     LOG.info("JSON payload: %s json_payload")
     
