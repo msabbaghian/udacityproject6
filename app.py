@@ -42,9 +42,10 @@ def predict():
     
     try:
         json_payload = request.json
-        LOG.info("JSON payload: %s json_payload")
     except:
         return "request failed"
+    
+    LOG.info("JSON payload: %s json_payload")
     
     try:
         inference_payload = pd.DataFrame(json_payload)
