@@ -42,8 +42,8 @@ def predict():
     
     try:
         json_payload = request.json
-    except:
-        return "request failed"
+    except e:
+        return "request failed" + e
     
     LOG.info("JSON payload: %s json_payload")
     
